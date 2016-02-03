@@ -1,0 +1,6 @@
+<input ng-click='editData = true; editInput = li' class='btn btn-warning' value='Edit'/>
+
+<div ng-show="editData" ng-model='editData'>
+  <input ng-model="editInput" type="text" name="editInput"/>
+  <input ng-click="edit(editInput)" type="button" value="Submit" class='btn btn-success'/>
+</div>
