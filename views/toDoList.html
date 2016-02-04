@@ -3,15 +3,6 @@
   <input ng-model='taskInput' type="text" class="form-control" id="task" placeholder="">
   <input ng-click='addToList(taskInput)' class='btn btn-success' value='Add to list'/>
 </div>
-
-<h2>To Do List:</h2>
-<!-- <div ng-repeat='li in list'>
-  <p ng-hide='editData'>
-    {{li}}
-  </p>
-  <sw-item-update list-item='{{li}}'></sw-item-update>
-</div> -->
-
 <table ng-repeat='li in list' class='table'>
   <tr>
     <td ng-hide='editData'>

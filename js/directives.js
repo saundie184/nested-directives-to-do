@@ -19,7 +19,7 @@ app.directive('swList', function() {
       this.editItem = function(newItem, old){
         var index = $scope.list.indexOf(old);
         $scope.list[index] = newItem;
-        console.log('the new item is' + newItem + 'the old item is ' + old);
+        // console.log('the new item is' + newItem + 'the old item is ' + old);
       };
     }],
   };
@@ -44,17 +44,3 @@ app.directive('swItemUpdate', function() {
     }
   };
 });
-
-//Another child
-// app.directive('swEditItem', function() {
-//   return {
-//     restrict: 'E',
-//     templateUrl: 'views/editItem.html',
-//     require: '^swList',
-//     link: function(scope, element, attrs, ctrl) {
-//       scope.edit = function(item) {
-//         ctrl.editItem(item, attrs.listItem);
-//       };
-//     }
-//   };
-// });
